@@ -1,0 +1,32 @@
+import java.util.*;
+
+public class Game
+{
+    private Scanner input;
+    CharacterSelect myChar = new CharacterSelect();
+    /**
+     * Constructor for objects of class DungeonRealms
+     */
+    public Game()
+    {
+        // initialise instance variables
+        input = new Scanner(System.in);
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     * 
+     * @param  y   a sample parameter for a method
+     * @return     the sum of x and y 
+     */
+    public void startScreen()
+    {
+        // put your code here
+
+    }
+    
+    public void createCharacter()
+    {
+        System.out.println("");
+    }
+}
