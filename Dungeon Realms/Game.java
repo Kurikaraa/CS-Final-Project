@@ -1,5 +1,5 @@
 import java.util.*;
-
+import java.io.*;
 public class Game
 {
     private Scanner input;
@@ -46,6 +46,7 @@ public class Game
     public void createCharacter()
     {
         System.out.println("\t\tSelect a Character");
+        
         System.out.println(" 1.) Warrior \n\n 2.) Mage \n\n 3.) Rogue");
         
     }
