@@ -8,26 +8,24 @@
 public class player
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int playerLevel;
+    private int playerCurrentEXP;
+    private int playerMaxEXP;
+    private int playerCurrentHealth;
+    private int playerMaxHealth;
+    private int playerCurrentMana;
+    private int playerMaxMana;
+    private int playerMinAttack;
+    private int playerMaxAttack;
+    private int playerDefense;
+    
+    private String charName;
 
     /**
      * Constructor for objects of class player
      */
-    public player()
+    public player(int name, int currentEXP, int maxEXP)
     {
         // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
     }
 }

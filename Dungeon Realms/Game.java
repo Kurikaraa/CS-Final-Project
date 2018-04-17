@@ -3,10 +3,9 @@ import java.io.*;
 public class Game
 {
     private Scanner input;
-    int x;
-    CharacterSelect myChar = new CharacterSelect();
-    
+    private int myChar;
     private int storyInput;
+    private String charName;
     Story myStory = new Story();
     /**
      * Constructor for objects of class DungeonRealms
@@ -45,9 +44,24 @@ public class Game
     
     public void createCharacter()
     {
-        System.out.println("\t\tSelect a Character");
-        
-        System.out.println(" 1.) Warrior \n\n 2.) Mage \n\n 3.) Rogue");
-        
+        myChar = 0;
+        while(myChar != 1 || myChar != 2 || myChar != 3)
+        {
+            System.out.println("\t\tSelect a Character");
+            System.out.println(" 1.) Warrior \n\n 2.) Mage \n\n 3.) Rogue");
+            myChar = input.nextInt();
+            if(myChar == 1)
+            {
+                Warrior playerChar = new Warrior();
+            }
+            if(myChar == 2)
+            {
+                Mage playerChar = new Mage();
+            }
+            if(myChar == 3)
+            {
+                Rogue playerChar = new Rogue();
+            }
+        }
     }
 }
